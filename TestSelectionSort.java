@@ -32,11 +32,11 @@ public void testPositive(){
 	Sortedarr[2] = 8;
 	Sortedarr[3] = 9;
 	Sortedarr[4] = 10;
-	
-	SelectionSort obj= new SelectionSort();
-	obj.basicSelectionSort(arr);
-	
-	assertArrayEquals("Not Equal", Sortedarr, obj.basicSelectionSort(arr));
+
+	SelectionSort object= new SelectionSort();
+	object.basicSelectionSort(arr);
+
+	assertArrayEquals("Not Equal", Sortedarr, object);
 }
 public void testNegative(){
 	int[] arr = new int[5];
@@ -51,10 +51,10 @@ public void testNegative(){
 	Sortedarr[2] = -8;
 	Sortedarr[3] = -7;
 	Sortedarr[4] = -2;
-	
+
 	SelectionSort obj= new SelectionSort();
 	obj.basicSelectionSort(arr);
-	
+
 	assertArrayEquals("Not Equal", Sortedarr, obj.basicSelectionSort(arr));
 }
 public void testMixed(){
@@ -70,10 +70,10 @@ public void testMixed(){
 	Sortedarr[2] = 2;
 	Sortedarr[3] = 7;
 	Sortedarr[4] = 8;
-	
+
 	SelectionSort obj= new SelectionSort();
 	obj.basicSelectionSort(arr);
-	
+
 	assertArrayEquals("Not Equal", Sortedarr, obj.basicSelectionSort(arr));
 }
 public void testDuplicates(){
@@ -89,10 +89,10 @@ public void testDuplicates(){
 	Sortedarr[2] = 8;
 	Sortedarr[3] = 9;
 	Sortedarr[4] = 10;
-	
+
 	SelectionSort obj= new SelectionSort();
 	obj.basicSelectionSort(arr);
-	
+
 	assertArrayEquals("Not Equal", Sortedarr, obj.basicSelectionSort(arr));
 }
 }
